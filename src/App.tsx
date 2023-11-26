@@ -3,8 +3,8 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomeLayout from './pages/HomeLayout';
 import TestPage from './pages/TestPage';
-import Chart from './pages/Chart';
 import Profile from './pages/Profile';
+import Budget from './pages/Budget';
 
 const router = createBrowserRouter([
   {
@@ -27,9 +27,9 @@ const router = createBrowserRouter([
         element: <TestPage />,
       },
       {
-        path: '/chart',
+        path: '/budget',
         index: true,
-        element: <Chart />,
+        element: <Budget />,
       },
       {
         path: '/profile',
