@@ -4,9 +4,11 @@ import { IoConstruct } from 'react-icons/io5';
 export type SingleBreakdownComponentProp = {
   icon: React.ReactNode;
   category: string;
-  rate: string;
+  rate: number;
   amountSpent: number;
   amountBudget: number;
+  backgroundColor: string;
+  color: string;
 };
 
 const SingleBreakdownComponent = ({
@@ -15,19 +17,25 @@ const SingleBreakdownComponent = ({
   rate,
   amountSpent,
   amountBudget,
+  backgroundColor,
+  color,
 }: SingleBreakdownComponentProp) => {
   return (
     <div className='flex justify-between'>
       <span className='flex'>
-        <span className='mr-3'>
+        <span
+          className={`mr-3 w-[38px] h-[38px] rounded-full  flex justify-center items-center `}
+          style={{
+            background: backgroundColor,
+          }}
+        >
           <CircularProgress
-            value={49}
-            color='green.400'
-            stroke='#000'
+            value={rate}
+            color={color}
             size={'46px'}
             fill={'white'}
-            thickness={'6px'}
-            className=' p-0 rounded-full  bg-green-300'
+            thickness={'3px'}
+            className=' p-0 rounded-full  bg-green-300s circular-component-breakdown'
           >
             <CircularProgressLabel className='flex justify-center items-center   rounded-full'>
               {false && { icon }}
@@ -37,7 +45,7 @@ const SingleBreakdownComponent = ({
         </span>
         <span>
           <p className='font-bold'>{category}</p>
-          <p>{rate}</p>
+          <p>{rate}%</p>
         </span>
       </span>
       <span>

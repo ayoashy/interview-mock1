@@ -15,7 +15,7 @@ const MonthlyStatButtons = ({
   const isThisMonthActive = month === 1;
   return (
     <div className='flex items-center justify-between mb-8'>
-      <span className='flex gap-x-8 '>
+      <span className='flex gap-x-8'>
         <span
           onClick={onLastMonth}
           className={`${

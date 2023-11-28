@@ -14,3 +14,29 @@
   height: 2px;
   background: #0466c8;
 }
+
+.circular-component {
+}
+
+/* .circular-component  circle {
+  fill: white;
+  stroke: white;
+} */
+.circular-component circle:first-child {
+  /* Styles for the first circle */
+  /* fill: blue; */
+  stroke: white;
+}
+.circular-component circle + circle {
+  /* fill: green; */
+  /* stroke: white; */
+}
+
+.circular-component-breakdown circle:first-child {
+  stroke: white;
+  background: red;
+}
+.circular-component-breakdown circle + circle {
+  /* stroke: white; */
+  background: red;
+}

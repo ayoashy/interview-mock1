@@ -13,7 +13,7 @@ const ThisMonth = () => {
           fill={'white'}
           // size={'100%'}
           thickness={'6px'}
-          className='bg-white p-0 rounded-full border-0 border-green-400s '
+          className='bg-white p-0 rounded-full border-0 border-green-400s circular-component '
         >
           <CircularProgressLabel>49%</CircularProgressLabel>
         </CircularProgress>
