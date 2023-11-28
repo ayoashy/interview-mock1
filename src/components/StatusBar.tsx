@@ -31,11 +31,14 @@ const StatusBar = () => {
         <h2>9:41</h2>
         <span className='flex gap-x-2'>
           {statusBarIcons.map((icon) => {
-            return <span className='text-2xl '>{icon.icon}</span>;
+            return (
+              <span className='text-2xl ' key={icon.name}>
+                {icon.icon}
+              </span>
+            );
           })}
         </span>
       </span>
-      <span></span>
     </div>
   );
 };

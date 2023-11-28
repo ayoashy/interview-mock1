@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-  color: blue;
+.is-active {
+  color: #0466c8;
+  position: relative;
+}
+
+.is-active::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #0466c8;
 }

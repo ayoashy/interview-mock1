@@ -44,7 +44,7 @@ const HomeLayout = () => {
       <div className='px-8 pt-5'>
         <Outlet />
       </div>
-      <div className='fixed bottom-0 bg-green-400 h-[87px] justify-between flex w-full pl-[30px] pr-[35px]  items-center'>
+      <div className='fixed bottom-0 bg-white drop-shadow-lg h-[87px] justify-between flex w-full pl-[30px] pr-[35px]  items-center'>
         {bottomBar.map((link) => {
           return (
             <NavLink key={link.path} to={link.path} className={'text-4xl'}>

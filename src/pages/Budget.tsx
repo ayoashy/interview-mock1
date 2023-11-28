@@ -3,6 +3,7 @@ import StatusBar from '../components/StatusBar';
 import Hero from '../components/Hero';
 import BudgetBalanceBox from '../components/BudgetBalanceBox';
 import MonthlyStat from '../components/MonthlyStat';
+import CategoryBreakdown from '../components/CategoryBreakdown';
 
 const Budget = () => {
   return (
@@ -11,6 +12,7 @@ const Budget = () => {
       <Hero />
       <BudgetBalanceBox />
       <MonthlyStat />
+      <CategoryBreakdown />
     </div>
   );
 };
