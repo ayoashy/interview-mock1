@@ -20,4 +20,22 @@ export const budgetList: SingleBreakdownComponentProp[] = [
     color: '#038A39',
     backgroundColor: '#CAE7D6',
   },
+  {
+    icon: <IoCloudyNight className='t' />,
+    category: 'Savings',
+    rate: 20,
+    amountSpent: 10000,
+    amountBudget: 24000,
+    color: '#038A39',
+    backgroundColor: '#CAE7D6',
+  },
+  {
+    icon: <IoCloudyNight className='t' />,
+    category: 'Savings',
+    rate: 20,
+    amountSpent: 10000,
+    amountBudget: 24000,
+    color: '#038A39',
+    backgroundColor: '#CAE7D6',
+  },
 ];

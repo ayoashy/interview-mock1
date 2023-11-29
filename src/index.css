@@ -59,3 +59,15 @@ a.active-navlink span:last-child {
 a.default-navlink span:last-child {
   color: #797b8b;
 }
+
+/* add fonts */
+@font-face {
+  font-family: 'circular-bold';
+  src: url('./fonts/FontsFree-Net-CircularStd-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'circular';
+  src: url('./fonts/Circular\ Std\ Font.otf');
+}
