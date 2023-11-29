@@ -34,7 +34,7 @@ const SingleBreakdownComponent = ({
             color={color}
             size={'46px'}
             fill={'white'}
-            thickness={'3px'}
+            thickness={'5px'}
             className=' p-0 rounded-full  bg-green-300s circular-component-breakdown'
           >
             <CircularProgressLabel className='flex justify-center items-center   rounded-full'>

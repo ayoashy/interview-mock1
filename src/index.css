@@ -40,3 +40,22 @@
   /* stroke: white; */
   background: red;
 }
+
+a.default-navlink span span svg {
+  fill: #797b8b;
+}
+a.default-navlink span span span {
+  color: #797b8b;
+}
+
+a.active-navlink span span svg {
+  fill: #0466c8;
+}
+
+a.active-navlink span:last-child {
+  color: black;
+}
+
+a.default-navlink span:last-child {
+  color: #797b8b;
+}

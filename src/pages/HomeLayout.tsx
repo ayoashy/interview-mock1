@@ -47,7 +47,15 @@ const HomeLayout = () => {
       <div className='fixed bottom-0 bg-white drop-shadow-lg h-[87px] justify-between flex w-full pl-[30px] pr-[35px]  items-center'>
         {bottomBar.map((link) => {
           return (
-            <NavLink key={link.path} to={link.path} className={'text-4xl'}>
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-4xl active-navlink'
+                  : 'text-4xl default-navlink'
+              }
+            >
               <span className='flex flex-col gap-y-3 items-center'>
                 <span>{link.icon}</span>
                 <span className='text-xs'>{link.title}</span>
